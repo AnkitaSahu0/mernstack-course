@@ -306,6 +306,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import { img } from "framer-motion/client";
 
 // const navLinks = [
 //   { label: "Home", href: "/" },
@@ -365,7 +366,7 @@ export default function Navbar() {
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-14">
         <div className="flex items-center justify-between h-20">
 {/* Logo Branding Link */}
-    <Link href="/" className="flex items-center group select-none">
+    {/* <Link href="/" className="flex items-center group select-none">
       <div className="relative h-12 w-auto min-w-[140px] sm:h-14 transition-transform duration-200 group-hover:scale-[1.02]">
        <img
           src="/logo.png" // Direct browser routing path trigger
@@ -374,7 +375,33 @@ export default function Navbar() {
           loading="eager" // Browser ko immediate bina delay load karne ka signal deta hai
         />
       </div>
-    </Link>
+    </Link> */}
+<Link href="/" className="flex items-center gap-3 group select-none">
+  {/* Left Side: Exact Logo Image from your asset */}
+  <div className="relative h-14 w-auto min-w-[56px] sm:h-16 transition-transform duration-200 group-hover:scale-[1.02]">
+    <img
+      src="/logo1.png" 
+      alt="BeanGate Logo"
+      // mix-blend-multiply light mode me automatic white background gayab kar dega
+      // dark:invert-0 dark:brightness-125 configuration transparent image ke liye hai
+      className="h-full w-auto object-contain object-left mix-blend-multiply dark:mix-blend-normal"
+      loading="eager" 
+    />
+  </div>
+
+  {/* Right Side: Exact Typography Styling */}
+  <div className="flex flex-col justify-center leading-none">
+    {/* BeanGate Title Text */}
+    <span className="text-[28px] sm:text-[34px] font-bold tracking-tight text-black dark:text-white font-sans antialiased">
+      BeanGate
+    </span>
+    
+    {/* IT Solutions Subtitle Text */}
+    <span className="text-[12px] sm:text-[14px] font-semibold tracking-wide text-[#f17316] uppercase mt-0.5 font-sans">
+      IT Solutions Pvt. Ltd.
+    </span>
+  </div>
+</Link>
 
 
           {/* Desktop Navlinks (MAIN FIX HERE) */}
