@@ -405,14 +405,34 @@
 //     </section>
 //   );
 // }
-
-
-
 "use client";
 
 import React, { useState } from "react";
 import { ArrowRight, Play, Sparkles, X } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+
+// Configurations with strict type annotations outside the component
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { 
+      staggerChildren: 0.15 
+    } 
+  }
+};
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 25 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.6, 
+      ease: [0.25, 1, 0.5, 1] // Fixed tuple format internally mapped by Variants type
+    }
+  }
+};
 
 export default function Hero() {
   // Popup (Modal) show/hide karne ke liye state
@@ -434,24 +454,6 @@ export default function Hero() {
     const watchSection = document.getElementById("course");
     if (watchSection) {
       watchSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  // Animation Configurations
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15 } 
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 25 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
     }
   };
 
