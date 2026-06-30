@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="bg-zinc-50 dark:bg-[#060d18] text-foreground border-t border-zinc-200 dark:border-zinc-900/80 pt-16 pb-8 px-4 sm:px-6 lg:px-8 transition-colors duration-300 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 sm:gap-8 pb-12 border-b border-zinc-200 dark:border-zinc-900">
         
-        {/* ================= COLUMN 1: CONTACT DATA METADATA ================= */}
+        {/* /* ================= COLUMN 1: CONTACT DATA METADATA ================= */ }
         <div className="space-y-4">
           <h4 className="text-xs sm:text-sm font-black uppercase tracking-widest text-[#25a0e2]">
             Contact
@@ -108,7 +108,7 @@ export default function Footer() {
   strokeLinejoin="round"
 >
   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-  <rect width="4" h="12" x="2" y="9" />
+  <rect width="4" height="12" x="2" y="9" />
   <circle cx="4" cy="4" r="2" />
 </svg>
             </a>
