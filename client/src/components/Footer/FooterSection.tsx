@@ -92,7 +92,7 @@ export default function Footer() {
               <MessageSquare size={14} fill="currentColor" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/posts/beangate-it-solutions-pvt-ltd_step-into-the-future-with-ai-data-science-activity-7444980129958641665-rL1v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEH_UTIB3GoBWYeTto50PRwNe-gjfIHu5Hg" 
               target="_blank" 
               rel="noreferrer"
               className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center shadow hover:scale-105 transition-transform"
@@ -113,7 +113,7 @@ export default function Footer() {
 </svg>
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/beangate" 
               target="_blank" 
               rel="noreferrer"
               className="w-8 h-8 rounded-full bg-zinc-800 dark:bg-zinc-900 text-white flex items-center justify-center border border-zinc-700/50 shadow hover:scale-105 transition-transform"
