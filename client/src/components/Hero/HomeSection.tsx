@@ -250,7 +250,7 @@ export default function Hero() {
 
     //   <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 py-12">
         
-    <section id="home" className="relative flex flex-col justify-center bg-background text-foreground overflow-hidden pt-12 md:pt-14 pb-16 px-4 sm:px-6 lg:px-8 transition-colors duration-300 scroll-mt-24">
+    <section id="home" className="relative flex flex-col justify-center bg-background text-foreground overflow-hidden pt-5 md:pt-14 pb-16 px-4 sm:px-6 lg:px-8 transition-colors duration-300 scroll-mt-24">
   {/* Background radial glow */}
   <div className="absolute top-1/2 left-2/3 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-sky-500/10 dark:bg-sky-500/5 rounded-full blur-[120px] pointer-events-none" />
 
